@@ -27,17 +27,3 @@ else
 {
   document.querySelector("h1").innerHTML="Draw";
 }
-
-document.addEventListener('touchmove', function(event) {
-  if (event.scale !== 1) {
-    event.preventDefault();
-  }
-}, { passive: false });
-
-document.addEventListener('touchend', function(event) {
-  setTimeout(function() {
-    if (event.scale !== 1) {
-      event.preventDefault();
-    }
-  }, 0);
-}, false);
